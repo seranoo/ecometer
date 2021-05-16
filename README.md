@@ -5,7 +5,7 @@ Communicates using USB with the display unit. I'm using a Raspberry Pi 3. The Pi
 
 You have to edit the .py file and include the IP-adress of your MQTT broker (e.g. Home Assistant) + username + password.
 
-In my Home Assistant configuration.yaml i then include:
+In my Home Assistant configuration.yaml I then include:
 
 sensor:
   - platform: mqtt
