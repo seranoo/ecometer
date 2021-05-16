@@ -1,0 +1,11 @@
+[Unit]
+Description=My Ecometer Service
+After=mosquitto.service
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/Ecometer
+ExecStart=/usr/bin/python3 /home/pi/Ecometer/ecometer.py
+
+[Install]
+WantedBy=multi-user.target
